@@ -13,7 +13,12 @@
     <li><strong>ID: </strong><span th:text="${empleado1.id}"></span></li>
     <li><strong>Nombre: </strong><span th:text="${empleado1.nombre}"></span></li>
     <li><strong>Apellido: </strong><span th:text="${empleado1.apellido}"></span></li>
-    <li><strong>Direccion: </strong><span th:text="${empleado1.direccion}"></span></li>
+    <li>
+      <strong>Direccion: </strong>
+      <span th:text="${empleado1.direccion != null ? empleado1.direccion : 'No tiene direccion'}">
+      </span>
+    </li>
+
     <li><strong>Edad: </strong><span th:text="${empleado1.edad}"></span></li>
     <li><strong>Telefono: </strong><span th:text="${empleado1.telefono}"></span></li>
     <li><strong>Cargo: </strong><span th:text="${empleado1.puesto}"></span></li>

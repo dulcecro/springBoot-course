@@ -11,7 +11,7 @@ public class EjemploController {
     @GetMapping("/detalles_info")
     public String info(Model model) {
         Empleados empleado1 = new Empleados("Juan", "Rodriguez",
-                "av.comas 123","Boss", 35, 12345678, 001 );
+                null,"Boss", 35, 12345678, 001 );
 
         model.addAttribute("empleado1", empleado1);
         return "detalles_info";
